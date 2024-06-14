@@ -1,0 +1,149 @@
+html {
+  height: 100%;
+  background: -webkit-radial-gradient(circle, #fff, #ccc);
+}
+
+#container {
+  height: 400px;
+  width: 550px;
+  background-color: aqua;
+  margin: 100px auto;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 0px 0px skyblue;
+  position: relative;
+}
+
+#scorebox {
+  background-color: rgb(245, 191, 125);
+  color: rgb(10, 77, 10);
+  padding: 10px;
+  position: absolute;
+  margin-left: 475px;
+  box-shadow: 0px 4px 0px 0px rgb(130, 151, 13);
+}
+
+#corect {
+  position: absolute;
+  left: 225px;
+  background-color: green;
+  color: #fff;
+  padding: 8px;
+  display: none;
+}
+
+#wrong {
+  position: absolute;
+  left: 225px;
+  background-color: red;
+  color: #fff;
+  padding: 8px;
+  display: none;
+}
+
+#question {
+  width: 450px;
+  height: 150px;
+  background-color: cornflowerblue;
+  margin: 50px auto 10px auto;
+  box-shadow: 0px 4px rgb(14, 50, 117);
+  font-size: 100px;
+  text-align: center;
+  font-family: cursive, sans-serif;
+  color: black;
+}
+
+#instraction {
+  width: 450px;
+  height: 45px;
+  background-color: rgb(13, 161, 112);
+  margin: 2px auto;
+  box-shadow: 0px 4px rgb(5 120 103);
+  text-align: center;
+  line-height: 42px;
+}
+
+#choices {
+  width: 450px;
+  height: 97px;
+  /* background-color: #ccc; */
+  margin: 10px auto;
+}
+
+.box {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  float: left;
+  margin-right: 43px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0px 4px grey;
+  text-align: center;
+  line-height: 82px;
+  transition: all 0.2s;
+}
+
+#box4 {
+  margin-right: 0;
+}
+
+.box:hover {
+  background-color: rgb(253, 27, 253);
+  color: #fff;
+  box-shadow: 0px 04px rgb(133, 8, 50);
+}
+
+.box:active {
+  box-shadow: 0px 0px white;
+  top: 12px;
+}
+
+#start {
+  width: 90px;
+  height: 25px;
+  background-color: rgb(130, 252, 252);
+  margin: 0px auto 5px auto;
+  padding: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0px 4px grey;
+  text-align: center;
+  /* line-height: 82px; */
+  transition: all 0.2s;
+}
+
+#start:hover {
+  background-color: rgb(253, 27, 253);
+  color: #fff;
+  box-shadow: 0px 04px rgb(133, 8, 50);
+}
+
+#time {
+  width: 169px;
+  padding: 10px;
+  position: absolute;
+  top: 378px;
+  left: 367px;
+  background-color: rgb(185, 243, 97);
+  border-radius: 4px;
+  box-shadow: 0px 4px rgba(128, 128, 128, 0.774);
+  /* visibility: hidden; */
+  display: none;
+}
+
+#gameover {
+  height: 200px;
+  width: 500px;
+  background: -webkit-linear-gradient(rgb(255, 136, 0), rgb(247, 231, 10));
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 100px;
+  left: 35px;
+  /* z-index work when position was absolute fix and stasatik */
+  z-index: 2;
+  display: none;
+}
